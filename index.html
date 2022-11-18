@@ -44,7 +44,7 @@ header {
 <h1>Rocket league</h1>
         </header>
 <h2>lijst van alle players</h2>
-<h4>refresh pagina als je de lijst wilt updaten!</h4>
+<h4>(refresh pagina als je de lijst wilt updaten!)</h4>
 <ul x-data="alpineInstance()" x-init="fetch('http://127.0.0.1:8000/players/all')
   .then(response => response.json())
   .then(data => players = data)">
@@ -96,9 +96,9 @@ header {
     }"
 
 >
-    <input placeholder="name" type="text" x-model="postname">
-    <input placeholder="mmr" type="number" x-model="postmmr">
-    <input placeholder="level" type="number" x-model="postlevel">
+    <input placeholder="name" required="required" type="text" x-model="postname">
+    <input placeholder="mmr" required="required" type="number" x-model="postmmr">
+    <input placeholder="level" required="required" type="number" x-model="postlevel">
         <button x-on:click="createPost">create</button>
 
     <p>name that was inserted: <strong x-text="responsedata.name"></strong></p>
