@@ -44,6 +44,7 @@ header {
 <h1>Rocket league</h1>
         </header>
 <h2>lijst van alle players</h2>
+<h4>refresh pagina als je de lijst wilt updaten!</h4>
 <ul x-data="alpineInstance()" x-init="fetch('http://127.0.0.1:8000/players/all')
   .then(response => response.json())
   .then(data => players = data)">
