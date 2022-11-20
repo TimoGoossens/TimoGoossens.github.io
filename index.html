@@ -99,9 +99,15 @@ header {
     }"
 
 >
+<div>
     <input placeholder="name" type="text" x-model="postname">
+</div>
+<div>
     <input placeholder="mmr" type="number" x-model="postmmr">
+</div>
+<div>
     <input placeholder="level" type="number" x-model="postlevel">
+</div>
         <button x-on:click="createPost">create</button>
 
     <p>name that was inserted: <strong x-text="responsedata.name"></strong></p>
