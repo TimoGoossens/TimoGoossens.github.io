@@ -45,7 +45,7 @@ header {
         </header>
 <h2>lijst van alle players</h2>
 <h4>(refresh pagina als je de lijst wilt updaten!)</h4>
-<ul x-data="alpineInstance()" x-init="fetch('http://127.0.0.1:8000/players/all')
+<ul x-data="alpineInstance()" x-init="fetch('http://127.0.0.1:8000/players/')
   .then(response => response.json())
   .then(data => players = data)">
     <template x-for="ply in players" :key="index">
@@ -59,7 +59,7 @@ header {
         postmmr: null,
         postlevel: null,
         async getData() {
-            this.responsedata = await (await fetch('http://127.0.0.1:8000/players/random')).json();
+            this.responsedata = await (await fetch('http://127.0.0.1:8000/players/random/')).json();
         },
     }">
     <div>
@@ -81,7 +81,7 @@ header {
         postmmr: null,
         postlevel: null,
         async createPost() {
-            this.responsedata = await (await fetch('http://127.0.0.1:8000/players/create', {
+            this.responsedata = await (await fetch('http://127.0.0.1:8000/players/create/', {
               method: 'POST',
               body: JSON.stringify({
                     name: this.postname,
