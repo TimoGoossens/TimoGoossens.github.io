@@ -58,6 +58,7 @@ header {
         postname: null,
         postmmr: null,
         postlevel: null,
+        postid: null,
         async getData() {
             this.responsedata = await (await fetch('https://api-service-timogoossens.cloud.okteto.net/players/random')).json();
         },
@@ -68,6 +69,7 @@ header {
         <dt>name:</dt> <strong x-text="responsedata.name">Placeholder</strong>
         <dt>mmr:</dt><strong x-text="responsedata.mmr">Placeholder</strong>
         <dt>level:</dt><strong x-text="responsedata.level">Placeholder</strong>
+        <dt>id:</dt><strong x-text="responsedata.id">Placeholder</strong>
         </dl>
         </div>
     </div>
