@@ -264,7 +264,7 @@ h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: var(--cool-blue);
+  color: #d7d9e2;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
