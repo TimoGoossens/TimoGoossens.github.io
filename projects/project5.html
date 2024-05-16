@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>SOC (N&OS)</title>
+    <title>RideonTrack - ChooChooVision (Project4.0)</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
 
@@ -53,9 +53,9 @@
           <div class="row">
             <div class="col-lg-12 portfolio-info">
               <br />
-              <h2 style="color: #12d640">SOC (N&OS)</h2>
+              <h2 style="color: #12d640">RideonTrack - ChooChooVision (Project4.0)</h2>
               <ul>
-                <li><strong>Tech Stack</strong>:on-prem, linux, soc, security, cortex, thehive, shuffle</li>
+                <li><strong>Tech Stack</strong>:Cloud, Terraform, security</li>
                 <!-- <li>
                   <strong>Website URL</strong>:
                   <a
@@ -76,24 +76,25 @@
 
               <strong>Waar gaat het project over?</strong>
               <p>
-                Het project gaat over het praktisch examen van het vak Network & OS security.
-                Hier kregen we een paar weken voor om voor te bereiden.
-                Hierbij werd gevraagd om een soc op te bouwen met verschillende security features die we zelf mochten bepalen.
-                In dit project draaide het niet alleen om het opzetten van het SOC maar we moesten ook bewijzen dat ons SOC daadwerkelijk iets deed.
+                Dit project gaat over een speciaal vak waar we de kans kregen om een echt project te maken voor een echt bedrijf.
+                Het was ook een project met 1 of meer studenten per studierichting dus het was een project waar we echt goed moesten samen werken om een goed resultaat te behalen.
+                Ons project was voor RoT of RideonTrack. Ze vroegen ons om een AI model te maken dat allerlei anomalies kan detecteren, 
+                uiteindelijk het detecteren van signaalborden langs het treinspoor en onkruid of afval op het spoor.
+                Dit heeft natuurlijk ook een mooie front-end nodig daarom hebben we een webpagina gemaakt waar je op een kaart de verschillende anomalies kon tracken.
+                Dit hebben we gedaan met fastapi, Springboot, postgresql, leaflet en angular. 
 
               </p>
-              <strong>welke features heb ik gebruikt?</strong>
+              <strong>Wat heb ik gerealiseerd in dit project?</strong>
               <p>
-                Voor het verdedigende gedeelte heb ik gebruik gemaakt van: wazuh, thehive5, cortex, shuffle, discord(notifications).
-                Bij het aanvallende gedeelte maakte ik gebruik van:
-                Hydra, hiermee heb ik een ssh bruteforce gedaan op een agent die gekoppeld is aan mijn SOC en via een active response configuratie binnen in wazuh heb ik de aanval kunnen stoppen. 
-                invoke atomic red, hiermee heb ik de aanval T1548.003 "Abuse Elevation Control Mechanism: Sudo and Sudo Caching" uitgevoerd en mijn soc heeft succesvol gereageerd.
-                
+                Al de mooie dingen van hierboven hebben natuurlijk een infrastructuur nodig en we hebben met ons team besloten om dit op aws te doen.
+                Ik heb dus met behulp van Terrafom met "infrastructure as code" een AWS infrastructuur opgebouwd om zo heel onze infrastructuur te hosten.
+                Alleen de webpagina hebben we gehost op netlify.
               </p>
+              <strong>AWS schema en project overview</strong>
+              <img src="/assets/img/project/project4-0awsschema.png" alt=""> <img src="/assets/img/project/overview project4-0.svg" alt="">
               <strong>Conclusie</strong>
               <p>
-                Dit was echt een heel leuk project en zou het zo nog eens opnieuw willen doen.
-                Ook had ik graag nog verder gewerkt aan mijn SOC, dit is misschien een projectje om later weer op te pikken.
+                Ik vond dit project echt leuk want je werkt echt kei hard om uw gedeelte (taak) binnen het project af te krijgen.
               </p>
             </div>
           </div>
