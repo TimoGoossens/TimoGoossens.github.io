@@ -454,10 +454,10 @@ Meer informatie vind je onderaan de pagina. <a href="#onder">Klik hier</a>
             </h4>
               <h5 style="text-align: left">Wat is Essers?</h5>
               
-              <p style="text-align: left">
+              <p style="text-align: left; color: #242428">
                 H.Essers biedt gepersonaliseerde en geïntegreerde oplossingen voor duurzaam transport en logistiek in heel Europa. Als familiebedrijf willen zij een betrouwbare ketenpartner voor de lange termijn zijn voor opdrachtgevers in diverse branches. Hun toewijding aan hun mensen, hun klanten en de wereld drijft hun ambitie om een ​​positieve sociale, economische en ecologische impact te maken. Hun doel: de toekomst van de mondiale logistiek transformeren.
               </p>
-              <p style="text-align: left">hun kracht ligt in hun asset-based strategie. Dankzij het in-house beheer van hun eigen wagenpark, magazijnen en IT-systemen houden ze alle processen optimaal onder controle.</p>
+              <p style="text-align: left; color: #242428">hun kracht ligt in hun asset-based strategie. Dankzij het in-house beheer van hun eigen wagenpark, magazijnen en IT-systemen houden ze alle processen optimaal onder controle.</p>
             </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
@@ -474,33 +474,33 @@ Meer informatie vind je onderaan de pagina. <a href="#onder">Klik hier</a>
                 <em>Wat was de opdracht?</em>
               </p>
               <p style="text-align: left; color: #242428">
-                <b
-                  >Essers beschikt in hun eigen datacenters over meer dan 500 virtual servers die elk hun eigen logs genereren.
-                  Deze servers worden al gemonitord door SCOM, waardoor ze metrics en generieke events kunnen analyseren.
-                  Het is nodig om meer in te zetten op authenticatie logs, zoals het vinden van anomalieën bij user en service accounts.
-                  Hier komt SCOM te kort en is er gekozen om een centrale syslog server op te zetten (Nagios), waar alle logs naartoe moeten gestuurd worden en deze daar kunnen verwerkt worden.
-                  
-                  Het is de bedoeling om relevante logs van verschillende systemen naar de syslog server te sturen om deze daar verder te kunnen afhandelen.</b
-                >
+                Essers beschikt in hun eigen datacenters over meer dan 500 virtual servers die elk hun eigen logs genereren.
+                Deze servers worden al gemonitord door SCOM, waardoor ze metrics en generieke events kunnen analyseren.
+                Het is nodig om meer in te zetten op authenticatie logs, zoals het vinden van anomalieën bij user en service accounts.
+                Hier komt SCOM te kort en is er gekozen om een centrale syslog server op te zetten (Nagios), waar alle logs naartoe moeten gestuurd worden en deze daar kunnen verwerkt worden.
+                
+                Het is de bedoeling om relevante logs van verschillende systemen naar de syslog server te sturen om deze daar verder te kunnen afhandelen.
               </p>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>Nagios Log server</em>
+              <p style="text-align: left">De stageopdracht bestaat uit:
               </p>
-              <p style="text-align: left; color: #242428">
-                <b
-                  >Project:Ant Colony Optimization in Wireless Sensor Networks
-                  for Energy Efficient Routing.</b
-                >
-              </p>
-              <p style="text-align: left; color: #172615; font-size: medium">
-                <em>Squared up</em>
-              </p>
-              <p style="text-align: left; color: #242428">
-                <b
-                  >Project:Ant Colony Optimization in Wireless Sensor Networks
-                  for Energy Efficient Routing.</b
-                >
-              </p>
+              <ul style="text-align: left">
+                <li>
+                  Het doorsturen van logfiles naar de syslog server, eerste focus ligt op authenticatie zoals active directory.
+                </li>
+                <li>
+                  Adhv de logs activiteiten van high privileged accounts bewaken en alerts uitsturen.
+
+                </li>
+                <li>
+                  Het creëren van security dashboards, critical servers zullen steeds “healthy” moeten zijn
+Onderzoeken welke netwerk devices (bv Netscaler, F5, Palo Alto) ook logs kunnen doorsturen naar de syslog server en hier relevante informatie kan uitgehaald worden.
+
+                </li>
+                <li>
+                  Het opzetten van een alerting systeem bij een critical event (mails uitsturen / notifications / SMS)
+                </li>
+              </ul>
+        
               
             </div>
             <!-- <div
